@@ -1,4 +1,4 @@
-const question = document.querySelector('#question')
+const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
@@ -12,11 +12,11 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "21",
-        choice4: "17",
+        question: 'What is 2 + 2?',
+        choice1: '2',
+        choice2: '4',
+        choice3: '21',
+        choice4: '17',
         answer: 2,
     },
     {
@@ -51,7 +51,7 @@ const MAX_QUESTIONS = 4
 startGame = () => {
     questionCounter = 0
     score = 0
-    availableQuestions = [... questions]
+    availableQuestions = [...questions]
     getNewQuestion()
 }
 
@@ -59,7 +59,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('end.html')
     }
 
     questionCounter++
@@ -106,4 +106,6 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
+
+startGame()
 
