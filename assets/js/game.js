@@ -12,11 +12,11 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: "What is 2 + 2?",
+        choice1: "2",
+        choice2: "4",
+        choice3: "21",
+        choice4: "17",
         answer: 2,
     },
     {
@@ -51,7 +51,7 @@ const MAX_QUESTIONS = 4
 startGame = () => {
     questionCounter = 0
     score = 0
-    availableQuestions = [...questions]
+    availableQuestions = [... questions]
     getNewQuestion()
 }
 
