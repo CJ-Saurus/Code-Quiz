@@ -10,6 +10,7 @@ Created a multiple choice quiz
 
 ## Website
 
+https://cj-saurus.github.io/Code-Quiz/
 
 ## Screenshots
 <img src="./assets/images/Screenshot1.png"/>
